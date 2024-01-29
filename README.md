@@ -1,5 +1,40 @@
 # MERN Ecommerce
 
+## Running Locally
+
+### Start Mongodb container
+
+```
+docker-compose up -d mongodb
+```
+
+### Create .env config files
+Create files in client & server directory with default `.env` files
+
+Export `NODE_OPTIONS` to bypass node 18 issue.
+
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
+### Install client and server
+
+```
+cd client/
+npm i
+```
+
+```
+cd server/
+npm i
+npm run seed:db -- admin@example.com strongpassword
+```
+
+### Run with AppMap
+```
+npx appmap-node npm run dev
+```
+
 ## Description
 
 An ecommerce store built with MERN stack, and utilizes third party API's. This ecommerce store enable three main different flows or implementations:
