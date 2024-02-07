@@ -2,6 +2,7 @@ name: mern-ecommerce
 appmap_dir: tmp/appmap
 packages:
   - path: server/node_modules/mongodb/
+  - path: server/node_modules/mongoose/
   - path: server/
     exclude:
       - node_modules
