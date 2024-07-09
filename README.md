@@ -9,8 +9,8 @@ docker-compose up
 ```
 
 Login with:
-username: `admin@example.com`
-password: `strongpassword`
+Username: `admin@example.com`  
+Password: `strongpassword`
 
 ## Run Mongodb in Container and App Locally
 
