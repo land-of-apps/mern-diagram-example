@@ -28,11 +28,18 @@ npm i
 cd server/
 npm i
 npm run seed:db -- admin@example.com strongpassword
+<terminal output>
+✓ seed db started
+✓ MongoDB Connected!
+existingUser null
+✓ seed db finished
+<ctrl c to exit after seed db finished>
 ```
 
-### Run with AppMap
+### Run with AppMap (from root directory)
 ```
-npx appmap-node npm run dev
+npm i
+npx appmap-node@latest npm run dev
 ```
 
 ## Description
