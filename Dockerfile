@@ -20,7 +20,5 @@ COPY . .
 # Expose ports
 EXPOSE 8080
 
-RUN cd server && npm run seed:db -- admin@example.com strongpassword
-
 # Start both the client and server
 CMD [ "npx", "appmap-node@latest", "npm", "run", "dev" ]
