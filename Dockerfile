@@ -13,10 +13,6 @@ COPY server/package*.json server/
 RUN cd client && npm install
 RUN cd server && npm install
 
-# Copy all necessary files
-COPY . .
-
-
 # Expose ports
 EXPOSE 8080
 

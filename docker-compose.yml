@@ -27,6 +27,7 @@ services:
       - db-seed
     volumes:
       - ./tmp:/app/tmp
+      - ./:/app
 
   db-seed:
     build:
@@ -42,6 +43,8 @@ services:
       - mongodb
     command: >
       sh -c "cd server && npm run seed:db -- admin@example.com strongpassword"
+    volumes:
+      - ./:/app
 
 volumes:
   mongodb_data:
