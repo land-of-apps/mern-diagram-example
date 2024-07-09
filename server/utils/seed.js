@@ -1,5 +1,6 @@
 const chalk = require('chalk');
 const bcrypt = require('bcryptjs');
+const mongoose = require('mongoose');
 
 const setupDB = require('./db');
 const { ROLES } = require('../constants');
@@ -40,6 +41,8 @@ const seedDB = async () => {
     );
     console.log(error);
     return null;
+  } finally {
+    mongoose.connection.close();
   }
 };
 

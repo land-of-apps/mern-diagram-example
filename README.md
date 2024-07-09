@@ -2,6 +2,14 @@
 
 ## Running Locally
 
+## Run Everything in Docker
+
+```
+docker-compose up
+```
+
+## Run Mongodb in Container and App Locally
+
 ### Start Mongodb container
 
 ```
