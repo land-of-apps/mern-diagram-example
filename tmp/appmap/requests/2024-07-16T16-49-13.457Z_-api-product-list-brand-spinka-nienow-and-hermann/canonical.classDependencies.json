@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "GET /api/product/list/brand/spinka-nienow-and-hermann",
+    "callee": "server/node_modules"
+  },
+  {
+    "caller": "mongodb/brands",
+    "callee": "server/node_modules"
+  }
+]

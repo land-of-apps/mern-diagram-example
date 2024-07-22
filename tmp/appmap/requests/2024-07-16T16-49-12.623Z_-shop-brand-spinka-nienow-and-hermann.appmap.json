@@ -1,0 +1,80 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "path_info": "/shop/brand/spinka-nienow-and-hermann",
+        "request_method": "GET",
+        "headers": {
+          "Host": "0.0.0.0:8080",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8",
+          "Accept-Language": "en-US,en;q=0.5",
+          "Accept-Encoding": "gzip, deflate",
+          "Dnt": "1",
+          "Sec-Gpc": "1",
+          "Connection": "keep-alive",
+          "Upgrade-Insecure-Requests": "1",
+          "Priority": "u=4"
+        },
+        "protocol": "HTTP/1.1",
+        "normalized_path_info": "*"
+      },
+      "id": 1,
+      "thread_id": 0
+    },
+    {
+      "event": "return",
+      "http_server_response": {
+        "status_code": 200,
+        "headers": {
+          "X-Powered-By": "Express",
+          "Accept-Ranges": "bytes",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Content-Length": "688",
+          "Etag": "W/\"2b0-GBjnh3H7fy9y+vUB9QxTCJfkPBM\"",
+          "Vary": "Accept-Encoding"
+        },
+        "return_value": {
+          "class": "[ResponseBody]",
+          "value": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n    <link rel=\"icon\" href=\"/images/favicon.ico\" />\n      <!--avoide catche store in browser-->\n    <meta http-equiv='cache-control' content='no-cache'>\n    <meta http-equiv='expires' content='0'>\n    <meta http-equiv='pragma' content='no-cache'>\n    <!---->\n    <title>MERN Store</title>\n  </head>\n  <body>\n    <noscript> You need to enable JavaScript to run this app. </noscript>\n    <div id=\"root\"></div>\n  <script type=\"text/javascript\" src=\"/main.js\"></script></body>\n</html>\n"
+        }
+      },
+      "id": 2,
+      "thread_id": 0,
+      "parent_id": 1,
+      "elapsed": 0.0012921250017825514
+    }
+  ],
+  "version": "1.12",
+  "metadata": {
+    "client": {
+      "name": "appmap-node",
+      "version": "2.23.0",
+      "url": "https://github.com/getappmap/appmap-node"
+    },
+    "language": {
+      "name": "javascript",
+      "engine": "Node.js",
+      "version": "v18.19.0"
+    },
+    "app": "mern-ecommerce",
+    "recorder": {
+      "type": "requests",
+      "name": "requests"
+    },
+    "name": "GET /shop/brand/spinka-nienow-and-hermann (200) — 2024-07-16T16:49:12.623Z"
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET *"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "GET /",
+    "callee": "mongodb/brands"
+  },
+  {
+    "caller": "GET /",
+    "callee": "mongodb/products"
+  },
+  {
+    "caller": "GET /",
+    "callee": "mongodb/users"
+  },
+  {
+    "caller": "GET /",
+    "callee": "server/node_modules"
+  }
+]

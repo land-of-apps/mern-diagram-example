@@ -1,0 +1,80 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "path_info": "/main.edf35ae584d42653719c.hot-update.js",
+        "request_method": "GET",
+        "headers": {
+          "Host": "0.0.0.0:8080",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0",
+          "Accept": "*/*",
+          "Accept-Language": "en-US,en;q=0.5",
+          "Accept-Encoding": "gzip, deflate",
+          "Dnt": "1",
+          "Sec-Gpc": "1",
+          "Connection": "keep-alive",
+          "Referer": "http://0.0.0.0:8080/dashboard/product",
+          "If-None-Match": "W/\"3233-qllVZYjr7xevRcT+dWy4Pgeb0Eg\""
+        },
+        "protocol": "HTTP/1.1",
+        "normalized_path_info": "*"
+      },
+      "id": 1,
+      "thread_id": 0
+    },
+    {
+      "event": "return",
+      "http_server_response": {
+        "status_code": 200,
+        "headers": {
+          "X-Powered-By": "Express",
+          "Accept-Ranges": "bytes",
+          "Content-Type": "application/javascript; charset=UTF-8",
+          "Etag": "W/\"164f-mjbuKOilRJWb6SlZDtwfwNdWa1U\"",
+          "Vary": "Accept-Encoding",
+          "Content-Encoding": "gzip"
+        },
+        "return_value": {
+          "class": "[ResponseBody]",
+          "value": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0013�Xms��\u0016��_��_�L&\"�3crs�\u0002\n¢\t ��[V\u0003=�4\rC��l���F�f�fv�M��</�y��ݧ�'�g ��iag!(�i#\u0001\u0011n\\�yr�<??or��&Ȳf�&Y�!.HSJ�$��G0�0(�\u00147#\u001c��rI\u001a7'��_����/��\u0013���ܿ(���\u0013���D�&e��*K�pY���\u0010�7\\\b��\u0012\u0015\u001c\u000b���~-q@˞&iX\"x��fO�h�M�l�o��2��lv��yr�(\t�H�GAѸ=�+�N\u001bo�^�o���Nq�[�<I�\u0012j�Λ�\n�\\\u000eAP�fnO|��~����\u0007s���\u0006\u000f][���ٌ�{��)m�%S�i㲉�\u0010���H�yv\u0012O\u001b�#��V�;�y��l�h������\u0006��}�\u001f���;\u0005\u001e�i����-�q�v!�0\"�+ۏj�CdF�\u001f\u0002f\u0004��\u001c!x�\u0005(�����7Ŵ��)��ý�lMM\u001aB�i�/n��\u001e�=�i��\u00199���b�\tT�\u0005@�`\u000e\tw�1���Fѿ\u0014\u001f\u0000�q��[J�F\\\u0000\u001c\"H�%\u0014\u0005�>�W�S���ؐ9,R�.\tD0(`�}�ZTF��kS)�E��Õ��r\t.�\u001c�\u0002�\u0010L .N��0ZM\u001b\u0017[.\u0001\u0002�\fA\u0002o�i#����մ�x\\��j��\u001e�\u0004;�\u0018V�\u000e|�(S����q��(�\u0016\u0000���k�71\u0019�C�\u0006t#�!����j�K@>�\u0018\u0006��\n{�RZ���n�d9\\EiIv���3�ر�W:ÏQ\u0001��\u0010=���a(��K�\u0006�=�-��\u0011���1��G�s\b�\f�����w����W\tR\\�\b��u�vXl\u0003APD�C�k�.\"�8��\u0003�`�>�,1.\u0011b\u001b��\u001e��\u0018����U:~߸j�66q��\u001f�\u001dw�r��n��_9��y\u0000mS����\u0005���sk\u001f�,��CP�\u001b�e(\n�y�$)�\r\u0016 '��+��\u001f�����O�\u0017p�\t�X{\u0006n�T��.i�����\bγ��|\u0015�h���D �����\u001eu\u0016A�~5\u0011:E�tJ�m������V�\u000b�+[�1pۋPA+?�d~b\"(��\u0005ϝ�[\u0006��x�&��n��\u0004TN�f�\u000bב.iOA�y\n�*Q��\n\u0015�PLo<����}|:q۱�8��\r�!T�D Ԏ��)C��\f��8�Pq�~k\u0011���O�gu�F�-�ƨ\u0010��\u0003/�����������[����߷9;�&�X�,��\u001eqlYt��o�r_����j�.;�����j\f��ˢ��dÖ�M]2��.�i]\u001ak*���B�\u0010��+DSQi�?ϊ\u0007ĵ���\u000e\u0017fT�mFzo(\u001a|&�2\u0012�^\\s�ZHz�%\u001av��+��MLj_W#Ö�\u0011��g�\"���|�CɌ*lĲ�ZU��bZ���������4��a\u0003���{���d���G36\u0018/��D��ٺX�ja��H�9�\u0003�yQ�\u001b�ܵ���ٓEc]U���2<MWd�p\u0006Ĵ��4l3��'&\u001e�vb�3�\t�Q�{*��[V�L{�=3?�iqm0�H���d��ʈ�\u00062��Z�l\r,>&\u0013[\u0016�Z\u001fٌ*ǰ���FvL�����p�\f�Mj܎�+��.6=\u0012���\r'Ӳ��q��m��p4��:CM��47�p��r(:}�qr�@Zw,K{���f�c˪2�=�^r]�b��\u001d��qF�� �y-,�Z\u001a��l}\u0016/G\u001e��R�\u000b�i��\u0017�1�C�5f�����qC�\r�g�\u000b)��3#���x�/��fRP�ʩ��g�3��ˡ����O���Y��8�,��\u001aVG2���\u0017\u001cE�#�G�FO�� �Y�'5�^M��.\fW�X\\�t��\u0007+C�\u0014��)����Z\u0001�\u001d{�y\t��>���5�N\u0019*l^}r��J_�\np+�\u0010�K_A���O�\u001a\u0006>�J}�~\u001b+���PU�R:?��̖\u0005~t�MoU�Xig�F����8�ɕ1����{\u001c���C�*��z�4^�54q��\u000b��:�\b^|,w�����~\u000e%����Od��A]~\u001e��U�\u001f�\u001fG�sآ���2\\�xȫ}2\u000f�\u000e?q+6����\u0017ڇ\u0018}~�h��=�\\\u0004u{\u0018�b�'&�\u001c����\u0015�\u0004����8\u0002���.�A�\u0017T�9˓��&V߿[$2\u001fX�g�3��:ګ��P�w�~t�n���V1\u0018O�\u0013�Z\u0004WÇ��B�V��_Kw�\u0015��\u000f\u0007y��^\u001fs��s6�^?J\u001b��9��\u001a�<�\u0013�:��?h�c�ݻ��ޯ�\u001b�>\u0003E.=�B\u001b;\u0001�0�z�^�ik�\\�̂+�L�\by����U�@ۗG,&c��zm�Wy�h�S}�wZ>6:�j�sð�n�\t�$h\u0015��;]\u001e%�o\u001c\u0001��V�\u000eߩ�ݚ!�E����hM�]��I��\u0015�9��g!��]Q���WP\t���\u001b?$���y�ȅ7�1õZY�8��5�ko�e���<�u�� �m���\u0005�Gor\u0007c\u0013��Q�7^�?_W[{���\u00149�ܧ���.��h��Ν#u�Y�]���Ig��\u0000n\u001b\u0005���/���r��9\u000b\u0013�PcA^�\n\u0012����=6�G\u001fe(H:���\u0010�-_��:\u000b�Gt��\u0017]0�p�������2o��g�b\"/�[~�8�K�tnj���f�B����U���c�_U6߂>F��9\u0006��l���_��qv�����������\u0006:�b�O\u0016\u0000\u0000... (121 more characters)"
+        }
+      },
+      "id": 2,
+      "thread_id": 0,
+      "parent_id": 1,
+      "elapsed": 0.001738499995553866
+    }
+  ],
+  "version": "1.12",
+  "metadata": {
+    "client": {
+      "name": "appmap-node",
+      "version": "2.23.0",
+      "url": "https://github.com/getappmap/appmap-node"
+    },
+    "language": {
+      "name": "javascript",
+      "engine": "Node.js",
+      "version": "v18.19.0"
+    },
+    "app": "mern-ecommerce",
+    "recorder": {
+      "type": "requests",
+      "name": "requests"
+    },
+    "name": "GET /main.edf35ae584d42653719c.hot-update.js (200) — 2024-07-16T16:46:01.983Z"
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET *"
+        }
+      ]
+    }
+  ]
+}

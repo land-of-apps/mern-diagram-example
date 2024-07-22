@@ -1,0 +1,462 @@
+[
+  {
+    "name": "mongodb",
+    "type": "package",
+    "children": [
+      {
+        "type": "class",
+        "name": "users",
+        "children": [
+          {
+            "type": "function",
+            "name": "findOne",
+            "static": false,
+            "location": "mongodb/users:6"
+          },
+          {
+            "type": "function",
+            "name": "find",
+            "static": false,
+            "location": "mongodb/users:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "server",
+    "type": "package",
+    "children": [
+      {
+        "name": "node_modules",
+        "type": "package",
+        "children": [
+          {
+            "name": "mongoose",
+            "type": "package",
+            "children": [
+              {
+                "name": "lib",
+                "type": "package",
+                "children": [
+                  {
+                    "name": "error",
+                    "type": "package",
+                    "children": [
+                      {
+                        "type": "class",
+                        "name": "CastError",
+                        "children": [
+                          {
+                            "type": "function",
+                            "name": "constructor",
+                            "static": false,
+                            "location": "server/node_modules/mongoose/lib/error/cast.js:21"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "class",
+                        "name": "cast",
+                        "children": [
+                          {
+                            "type": "function",
+                            "name": "formatMessage",
+                            "static": true,
+                            "location": "server/node_modules/mongoose/lib/error/cast.js:94"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "helpers",
+                    "type": "package",
+                    "children": [
+                      {
+                        "name": "document",
+                        "type": "package",
+                        "children": [
+                          {
+                            "type": "class",
+                            "name": "compile",
+                            "children": [
+                              {
+                                "type": "function",
+                                "name": "getOwnPropertyDescriptors",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/document/compile.js:157"
+                              },
+                              {
+                                "type": "function",
+                                "name": "compile",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/document/compile.js:22"
+                              },
+                              {
+                                "type": "function",
+                                "name": "defineKey",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/document/compile.js:45"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "populate",
+                        "type": "package",
+                        "children": [
+                          {
+                            "type": "class",
+                            "name": "getModelsMapForPopulate",
+                            "children": [
+                              {
+                                "type": "function",
+                                "name": "_getModelNames",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:330"
+                              },
+                              {
+                                "type": "function",
+                                "name": "handleRefFunction",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:450"
+                              },
+                              {
+                                "type": "function",
+                                "name": "convertTo_id",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:464"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "class",
+                            "name": "getVirtual",
+                            "children": [
+                              {
+                                "type": "function",
+                                "name": "getVirtual",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/populate/getVirtual.js:9"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "query",
+                        "type": "package",
+                        "children": [
+                          {
+                            "type": "class",
+                            "name": "completeMany",
+                            "children": [
+                              {
+                                "type": "function",
+                                "name": "completeMany",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/query/completeMany.js:21"
+                              },
+                              {
+                                "type": "function",
+                                "name": "init",
+                                "static": true,
+                                "location": "server/node_modules/mongoose/lib/helpers/query/completeMany.js:27"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "class",
+                        "name": "clone",
+                        "children": [
+                          {
+                            "type": "function",
+                            "name": "cloneObject",
+                            "static": true,
+                            "location": "server/node_modules/mongoose/lib/helpers/clone.js:103"
+                          },
+                          {
+                            "type": "function",
+                            "name": "cloneArray",
+                            "static": true,
+                            "location": "server/node_modules/mongoose/lib/helpers/clone.js:129"
+                          },
+                          {
+                            "type": "function",
+                            "name": "clone",
+                            "static": true,
+                            "location": "server/node_modules/mongoose/lib/helpers/clone.js:29"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "class",
+                        "name": "get",
+                        "children": [
+                          {
+                            "type": "function",
+                            "name": "getProperty",
+                            "static": true,
+                            "location": "server/node_modules/mongoose/lib/helpers/get.js:31"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "class",
+                        "name": "isBsonType",
+                        "children": [
+                          {
+                            "type": "function",
+                            "name": "isBsonType",
+                            "static": true,
+                            "location": "server/node_modules/mongoose/lib/helpers/isBsonType.js:9"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "plugins",
+                    "type": "package",
+                    "children": [
+                      {
+                        "type": "class",
+                        "name": "sharding",
+                        "children": [
+                          {
+                            "type": "function",
+                            "name": "storeShard",
+                            "static": true,
+                            "location": "server/node_modules/mongoose/lib/plugins/sharding.js:57"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "schema",
+                    "type": "package",
+                    "children": [
+                      {
+                        "type": "class",
+                        "name": "objectid",
+                        "children": [
+                          {
+                            "type": "function",
+                            "name": "resetId",
+                            "static": true,
+                            "location": "server/node_modules/mongoose/lib/schema/objectid.js:299"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "class",
+                    "name": "document",
+                    "children": [
+                      {
+                        "type": "function",
+                        "name": "docReducer",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/document.js:2862"
+                      },
+                      {
+                        "type": "function",
+                        "name": "applyQueue",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/document.js:2914"
+                      },
+                      {
+                        "type": "function",
+                        "name": "$__applyDefaults",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/document.js:325"
+                      },
+                      {
+                        "type": "function",
+                        "name": "applySchemaTypeTransforms",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/document.js:3373"
+                      },
+                      {
+                        "type": "function",
+                        "name": "markArraySubdocsPopulated",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/document.js:568"
+                      },
+                      {
+                        "type": "function",
+                        "name": "init",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/document.js:607"
+                      },
+                      {
+                        "type": "function",
+                        "name": "_init",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/document.js:621"
+                      },
+                      {
+                        "type": "function",
+                        "name": "Document",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/document.js:65"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "class",
+                    "name": "internal",
+                    "children": [
+                      {
+                        "type": "function",
+                        "name": "InternalCache",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/internal.js:12"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "class",
+                    "name": "model",
+                    "children": [
+                      {
+                        "type": "function",
+                        "name": "Model",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/model.js:100"
+                      },
+                      {
+                        "type": "function",
+                        "name": "_checkContext",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/model.js:1158"
+                      },
+                      {
+                        "type": "function",
+                        "name": "_populate",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/model.js:4293"
+                      },
+                      {
+                        "type": "function",
+                        "name": "next",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/model.js:4305"
+                      },
+                      {
+                        "type": "function",
+                        "name": "populate",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/model.js:4322"
+                      },
+                      {
+                        "type": "function",
+                        "name": "flatten",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/model.js:4343"
+                      },
+                      {
+                        "type": "function",
+                        "name": "_formatMatch",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/model.js:4649"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "class",
+                    "name": "query",
+                    "children": [
+                      {
+                        "type": "function",
+                        "name": "cb",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/query.js:1913"
+                      },
+                      {
+                        "type": "function",
+                        "name": "prepareDiscriminatorCriteria",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/query.js:2883"
+                      },
+                      {
+                        "type": "function",
+                        "name": "Query",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/query.js:59"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "class",
+                    "name": "queryhelpers",
+                    "children": [
+                      {
+                        "type": "function",
+                        "name": "analyzeSchema",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/queryhelpers.js:189"
+                      },
+                      {
+                        "type": "function",
+                        "name": "analyzePath",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/queryhelpers.js:224"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "class",
+                    "name": "schema",
+                    "children": [
+                      {
+                        "type": "function",
+                        "name": "_getPath",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/schema.js:805"
+                      },
+                      {
+                        "type": "function",
+                        "name": "_pathToPositionalSyntax",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/schema.js:823"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "class",
+                    "name": "utils",
+                    "children": [
+                      {
+                        "type": "function",
+                        "name": "makeSingles",
+                        "static": true,
+                        "location": "server/node_modules/mongoose/lib/utils.js:515"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /api/user/me"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+[
+  "mongodb",
+  "server/node_modules/mongoose/lib",
+  "server/node_modules/mongoose/lib/error",
+  "server/node_modules/mongoose/lib/helpers",
+  "server/node_modules/mongoose/lib/helpers/document",
+  "server/node_modules/mongoose/lib/helpers/populate",
+  "server/node_modules/mongoose/lib/helpers/query",
+  "server/node_modules/mongoose/lib/options",
+  "server/node_modules/mongoose/lib/plugins",
+  "server/node_modules/mongoose/lib/schema"
+]

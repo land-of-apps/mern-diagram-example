@@ -1,0 +1,94 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "id": 1,
+      "thread_id": 0,
+      "method_id": "_handleReconnect",
+      "static": true,
+      "defined_class": "connection",
+      "path": "server/node_modules/mongoose/lib/connection.js",
+      "lineno": 694
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 2,
+      "parent_id": 1,
+      "elapsed": 0.000019583996618166566
+    },
+    {
+      "event": "call",
+      "id": 3,
+      "thread_id": 0,
+      "method_id": "_handleReconnect",
+      "static": true,
+      "defined_class": "connection",
+      "path": "server/node_modules/mongoose/lib/connection.js",
+      "lineno": 694
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 4,
+      "parent_id": 3,
+      "elapsed": 0.00000999998883344233
+    },
+    {
+      "event": "call",
+      "id": 5,
+      "thread_id": 0,
+      "method_id": "_handleReconnect",
+      "static": true,
+      "defined_class": "connection",
+      "path": "server/node_modules/mongoose/lib/connection.js",
+      "lineno": 694
+    },
+    {
+      "event": "return",
+      "thread_id": 0,
+      "id": 6,
+      "parent_id": 5,
+      "elapsed": 0.0000030840164981782436
+    }
+  ],
+  "version": "1.12",
+  "metadata": {
+    "client": {
+      "name": "appmap-node",
+      "version": "2.23.0",
+      "url": "https://github.com/getappmap/appmap-node"
+    },
+    "language": {
+      "name": "javascript",
+      "engine": "Node.js",
+      "version": "v18.19.0"
+    },
+    "app": "mern-ecommerce",
+    "recorder": {
+      "type": "process",
+      "name": "process"
+    },
+    "name": "2024-07-16T16:47:40.885Z"
+  },
+  "classMap": [
+    {
+      "name": "lib",
+      "type": "package",
+      "children": [
+        {
+          "type": "class",
+          "name": "connection",
+          "children": [
+            {
+              "type": "function",
+              "name": "_handleReconnect",
+              "static": true,
+              "location": "server/node_modules/mongoose/lib/connection.js:694"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

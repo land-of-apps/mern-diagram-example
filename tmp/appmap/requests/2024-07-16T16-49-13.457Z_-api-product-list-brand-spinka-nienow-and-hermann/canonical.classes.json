@@ -1,0 +1,20 @@
+[
+  "mongodb/brands",
+  "server/node_modules/mongoose/lib/document",
+  "server/node_modules/mongoose/lib/error/CastError",
+  "server/node_modules/mongoose/lib/error/cast",
+  "server/node_modules/mongoose/lib/helpers/clone",
+  "server/node_modules/mongoose/lib/helpers/document/compile",
+  "server/node_modules/mongoose/lib/helpers/get",
+  "server/node_modules/mongoose/lib/helpers/isBsonType",
+  "server/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate",
+  "server/node_modules/mongoose/lib/helpers/populate/getVirtual",
+  "server/node_modules/mongoose/lib/helpers/query/completeMany",
+  "server/node_modules/mongoose/lib/internal",
+  "server/node_modules/mongoose/lib/model",
+  "server/node_modules/mongoose/lib/plugins/sharding",
+  "server/node_modules/mongoose/lib/query",
+  "server/node_modules/mongoose/lib/queryhelpers",
+  "server/node_modules/mongoose/lib/schema",
+  "server/node_modules/mongoose/lib/utils"
+]

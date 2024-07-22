@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /sockjs-node/info",
+    "parameters": "(t)",
+    "status": 200
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "lib",
+    "type": "package",
+    "children": [
+      {
+        "type": "class",
+        "name": "connection",
+        "children": [
+          {
+            "type": "function",
+            "name": "_handleReconnect",
+            "static": true,
+            "location": "server/node_modules/mongoose/lib/connection.js:694"
+          }
+        ]
+      }
+    ]
+  }
+]

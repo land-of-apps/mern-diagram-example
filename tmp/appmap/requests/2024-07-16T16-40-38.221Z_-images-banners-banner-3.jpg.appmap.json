@@ -1,0 +1,74 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "path_info": "/images/banners/banner-3.jpg",
+        "request_method": "GET",
+        "headers": {
+          "Host": "0.0.0.0:8080",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0",
+          "Accept": "image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5",
+          "Accept-Language": "en-US,en;q=0.5",
+          "Accept-Encoding": "gzip, deflate",
+          "Dnt": "1",
+          "Sec-Gpc": "1",
+          "Connection": "keep-alive",
+          "Referer": "http://0.0.0.0:8080/",
+          "If-None-Match": "W/\"1395f0-xKYn10c4hflitKouzswY72K9oP0\"",
+          "Priority": "u=5, i"
+        },
+        "protocol": "HTTP/1.1",
+        "normalized_path_info": "*"
+      },
+      "id": 1,
+      "thread_id": 0
+    },
+    {
+      "event": "return",
+      "http_server_response": {
+        "status_code": 304,
+        "headers": {
+          "X-Powered-By": "Express",
+          "Accept-Ranges": "bytes",
+          "Etag": "W/\"1395f0-xKYn10c4hflitKouzswY72K9oP0\""
+        }
+      },
+      "id": 2,
+      "thread_id": 0,
+      "parent_id": 1,
+      "elapsed": 0.0012507500068750232
+    }
+  ],
+  "version": "1.12",
+  "metadata": {
+    "client": {
+      "name": "appmap-node",
+      "version": "2.23.0",
+      "url": "https://github.com/getappmap/appmap-node"
+    },
+    "language": {
+      "name": "javascript",
+      "engine": "Node.js",
+      "version": "v18.19.0"
+    },
+    "app": "mern-ecommerce",
+    "recorder": {
+      "type": "requests",
+      "name": "requests"
+    },
+    "name": "GET /images/banners/banner-3.jpg (304) — 2024-07-16T16:40:38.221Z"
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET *"
+        }
+      ]
+    }
+  ]
+}

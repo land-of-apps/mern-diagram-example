@@ -1,0 +1,105 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "path_info": "/sockjs-node/info",
+        "request_method": "GET",
+        "headers": {
+          "Host": "0.0.0.0:8080",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0",
+          "Accept": "*/*",
+          "Accept-Language": "en-US,en;q=0.5",
+          "Accept-Encoding": "gzip, deflate",
+          "Dnt": "1",
+          "Sec-Gpc": "1",
+          "Connection": "keep-alive",
+          "Referer": "http://0.0.0.0:8080/"
+        },
+        "protocol": "HTTP/1.1"
+      },
+      "id": 1,
+      "thread_id": 0,
+      "message": [
+        {
+          "name": "t",
+          "value": "'1721148456714'",
+          "class": "String"
+        }
+      ]
+    },
+    {
+      "event": "return",
+      "http_server_response": {
+        "status_code": 200,
+        "headers": {
+          "Access-Control-Allow-Origin": "*",
+          "Vary": "Origin",
+          "Cache-Control": "no-store, no-cache, no-transform, must-revalidate, max-age=0",
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "return_value": {
+          "class": "Object",
+          "properties": [
+            {
+              "name": "websocket",
+              "class": "Boolean"
+            },
+            {
+              "name": "origins",
+              "class": "Array",
+              "items": {
+                "class": "String"
+              }
+            },
+            {
+              "name": "cookie_needed",
+              "class": "Boolean"
+            },
+            {
+              "name": "entropy",
+              "class": "Number"
+            }
+          ],
+          "value": "{\n  websocket: true,\n  origins: [ '*:*' ],\n  cookie_needed: false,\n  entropy: 772738400\n}",
+          "object_id": 1
+        }
+      },
+      "id": 2,
+      "thread_id": 0,
+      "parent_id": 1,
+      "elapsed": 0.001031583989970386
+    }
+  ],
+  "version": "1.12",
+  "metadata": {
+    "client": {
+      "name": "appmap-node",
+      "version": "2.23.0",
+      "url": "https://github.com/getappmap/appmap-node"
+    },
+    "language": {
+      "name": "javascript",
+      "engine": "Node.js",
+      "version": "v18.19.0"
+    },
+    "app": "mern-ecommerce",
+    "recorder": {
+      "type": "requests",
+      "name": "requests"
+    },
+    "name": "GET /sockjs-node/info (200) — 2024-07-16T16:47:36.723Z"
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /sockjs-node/info"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "route": "OPTIONS /api/product/list/brand/spinka-nienow-and-hermann",
+    "parameters": "()",
+    "status": 204
+  }
+]

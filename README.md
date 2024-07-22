@@ -1,168 +1,173 @@
-# MERN Ecommerce
+This project is a fork of the [MERN Ecommerce](https://github.com/mohamedsamara/mern-ecommerce) project. You can view the original [README here](OLD_README.md). 
+This an ideal MERN (Mongo, Express, React, Node) project to use with the [AppMap Navie](https://appmap.io/navie/) AI Architect.
 
-## Running Locally
+You can use this project to ask various questions of AppMap Navie using the `@diagram` command prefix.  
+This will generate Mermaid diagrams that you can use within GitHub Issues & Pull Requests, or otherwise share 
+with members of your team. 
 
-## Run Everything in Docker
+## Example Diagrams
+  - [Entity Relationship](#entity-relationship)
+  - [Sequence Diagram](#sequence-diagram)
+  - [Flow Chart](#flow-chart)
+  - [Class Map](#class-map)
 
-```
-docker-compose up
-```
-
-Login with:
-Username: `admin@example.com`  
-Password: `strongpassword`
-
-## Run Mongodb in Container and App Locally
-
-### Start Mongodb container
+### Entity Relationship
 
 ```
-docker-compose up -d mongodb
+@diagram the entitiy relationships between products, categories, and brands
 ```
 
-### Create .env config files
-Create files in client & server directory with default `.env` files
+```mermaid
+erDiagram
+  PRODUCT {
+    string _id
+    string name
+    text description
+    float price
+    int quantity
+    string category_id
+    string brand_id
+  }
+  CATEGORY {
+    string _id
+    string name
+    text description
+  }
+  BRAND {
+    string _id
+    string name
+    text description
+  }
 
-Export `NODE_OPTIONS` to bypass node 18 issue.
-
-```
-export NODE_OPTIONS=--openssl-legacy-provider
-```
-
-### Install client and server
-
-```
-cd client/
-npm i
-```
-
-```
-cd server/
-npm i
-npm run seed:db -- admin@example.com strongpassword
-<terminal output>
-✓ seed db started
-✓ MongoDB Connected!
-existingUser null
-✓ seed db finished
-<ctrl c to exit after seed db finished>
-```
-
-### Run with AppMap (from root directory)
-```
-npm i
-npx appmap-node@latest npm run dev
+  PRODUCT ||--o{ CATEGORY : belongs_to
+  PRODUCT ||--o{ BRAND : belongs_to
+  CATEGORY ||--o{ PRODUCT : has_many
+  BRAND ||--o{ PRODUCT : has_many
 ```
 
-## Description
+![Navie Entity Relationship Example](mern-entity-relationship.png)
 
-An ecommerce store built with MERN stack, and utilizes third party API's. This ecommerce store enable three main different flows or implementations:
-
-1. Buyers browse the store categories, products and brands
-2. Sellers or Merchants manage their own brand component
-3. Admins manage and control the entire store components 
-
-
-* features:
-  * Node provides the backend environment for this application
-  * Express middleware is used to handle requests, routes
-  * Mongoose schemas to model the application data
-  * React for displaying UI components
-  * Redux to manage application's state
-  * Redux Thunk middleware to handle asynchronous redux actions
-
-## Quickstart Guide
-
-To run this project locally you can use docker compose provided in the repository. Here is a guide on how to run this project locally using docker compose.
-
-Clone the repository
+### Sequence Diagram
 ```
-$ git clone https://github.com/mohamedsamara/mern-ecommerce.git
-```
-
-Edit the dockercompose.yml file and update the the values for MONGO_URI and JWT_SECRET
-
-Then simply start the docker compose:
-```
-$ docker compose -f dockercompose.yml up
-```
-
-## Database Seed
-
-* The seed command will create an admin user in the database
-* The email and password are passed with the command as arguments
-* Like below command, replace brackets with email and password. 
-* For more information, see code [here](server/utils/seed.js)
-
-```
-npm run seed:db [email-***@****.com] [password-******] // This is just an example.
-```
-
-## Demo
-
-This application is deployed on Vercel Please check it out :smile: [here](https://mern-store-gold.vercel.app).
-
-See admin dashboard [demo](https://mernstore-bucket.s3.us-east-2.amazonaws.com/admin.mp4)
-
-## Install
-
-Some basic Git commands are:
-
-```
-$ git clone https://github.com/mohamedsamara/mern-ecommerce.git
-$ cd project
-$ npm install
-```
-
-## Start development
-
-```
-$ npm run dev
-```
-
-## Simple build for production
-
-```
-$ npm run build
-```
-
-## Run build for production
-
-```
-$ npm start
+@diagram the process where a user adds items to their cart to complete a purchase.
 ```
 
 
-## Languages & tools
+```mermaid
+sequenceDiagram
+  participant User as User
+  participant Browser as Browser
+  participant App as Application
+  participant CartAPI as "Cart API"
+  participant ProductAPI as "Product API"
 
-- [Node](https://nodejs.org/en/)
+  User->>Browser: Add items to cart
+  Browser->>App: Send add-to-cart request
+  App->>CartAPI: POST /api/cart/add
+  activate CartAPI
 
-- [Express](https://expressjs.com/)
-
-- [Mongoose](https://mongoosejs.com/)
-
-- [React](https://reactjs.org/)
-
-- [Webpack](https://webpack.js.org/)
-
-
-### Code Formatter
-
-- Add a `.vscode` directory
-- Create a file `settings.json` inside `.vscode`
-- Install Prettier - Code formatter in VSCode
-- Add the following snippet:  
-
-```json
-
-    {
-      "editor.formatOnSave": true,
-      "prettier.singleQuote": true,
-      "prettier.arrowParens": "avoid",
-      "prettier.jsxSingleQuote": true,
-      "prettier.trailingComma": "none",
-      "javascript.preferences.quoteStyle": "single",
-    }
-
+  CartAPI->>ProductAPI: Validate product details
+  activate ProductAPI
+  ProductAPI-->>CartAPI: Return product details
+  deactivate ProductAPI
+  
+  alt Product available
+    CartAPI-->>App: Add item to cart and return cart details
+  else Product not available
+    CartAPI-->>App: Return error message
+  end
+  deactivate CartAPI
+  
+  App-->>Browser: Update cart UI with new items or show error
+  Browser-->>User: Show updated cart or error message
 ```
 
+![Navie Sequence Diagram](mern-sequence-diagram.png)
+
+### Flow Chart
+
+```
+@diagram a flow chart of the user product purchase experience from adding items to a cart through checkout.
+```
+
+```mermaid
+flowchart TD
+    A["User browses products"]
+    A --> B["User adds item to cart"]
+    B --> C["Check availability of product"]
+    C --> D{"Is product available?"}
+    D -->|No| E["Show out-of-stock message"]
+    D -->|Yes| F["Update cart in localStorage"]
+    F --> G["Show updated cart"]
+    G --> H["User proceeds to checkout"]
+
+    H --> I["Check user login status"]
+    I --> J{"Is user logged in?"}
+    J -->|No| K["Redirect to login page"]
+    J -->|Yes| L["Get cart items from localStorage"]
+    L --> M["Calculate total price"]
+
+    M --> N["Create cart ID if not exists"]
+    N --> O["Get cart items from store"]
+    O --> P["Proceed to payment"]
+    P --> Q["Process payment"]
+    Q --> R{"Payment successful?"}
+    R -->|No| S["Show payment error message"]
+    R -->|Yes| T["Show order confirmation page"]
+```
+
+![Navie Flow Chart](mern-flow-chart.png)
+
+### Class Map
+
+```
+@diagram a class map focusing on products, categories, brands, and the user cart
+```
+
+```mermaid
+classDiagram
+  direction LR
+
+  class Product {
+      +String sku
+      +String name
+      +String description
+      +Decimal price
+      +int quantity
+      +String image
+      +Boolean isActive
+      +Boolean taxable
+  }
+
+  class Category {
+      +String name
+  }
+
+  class Brand {
+      +String name
+  }
+
+  class Cart {
+      +int id
+      +Decimal total
+  }
+
+  class CartItem {
+      +int quantity
+      +Decimal price
+  }
+
+  class User {
+      +String username
+      +String email
+      +String password
+  }
+
+  Product "1" -- "*" CartItem : Contains
+  Cart "1" -- "*" CartItem : Contains
+  Category "1" -- "*" Product : Contains
+  Brand "1" -- "*" Product : Manufactures
+  User "1" -- "1..*" Cart : Owns
+```
+
+![Navie Class Map](mern-class-map.png)

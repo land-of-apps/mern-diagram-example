@@ -1,0 +1,7 @@
+[
+  {
+    "route": "OPTIONS /api/product",
+    "parameters": "()",
+    "status": 204
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "events": [
+    {
+      "event": "call",
+      "http_server_request": {
+        "path_info": "/api/user/me",
+        "request_method": "OPTIONS",
+        "headers": {
+          "Host": "localhost:3000",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:128.0) Gecko/20100101 Firefox/128.0",
+          "Accept": "*/*",
+          "Accept-Language": "en-US,en;q=0.5",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+          "Access-Control-Request-Method": "GET",
+          "Access-Control-Request-Headers": "authorization",
+          "Referer": "http://0.0.0.0:8080/",
+          "Origin": "http://0.0.0.0:8080",
+          "Dnt": "1",
+          "Sec-Gpc": "1",
+          "Connection": "keep-alive",
+          "Sec-Fetch-Dest": "empty",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Site": "cross-site",
+          "Priority": "u=4"
+        },
+        "protocol": "HTTP/1.1"
+      },
+      "id": 1,
+      "thread_id": 0
+    },
+    {
+      "event": "return",
+      "http_server_response": {
+        "status_code": 204,
+        "headers": {
+          "X-Dns-Prefetch-Control": "off",
+          "Expect-Ct": "max-age=0",
+          "X-Frame-Options": "SAMEORIGIN",
+          "Strict-Transport-Security": "max-age=15552000; includeSubDomains",
+          "X-Download-Options": "noopen",
+          "X-Content-Type-Options": "nosniff",
+          "X-Permitted-Cross-Domain-Policies": "none",
+          "Referrer-Policy": "no-referrer",
+          "X-Xss-Protection": "0",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+          "Vary": "Access-Control-Request-Headers",
+          "Access-Control-Allow-Headers": "authorization",
+          "Content-Length": "0"
+        }
+      },
+      "id": 2,
+      "thread_id": 0,
+      "parent_id": 1,
+      "elapsed": 0.00038879099884070456
+    }
+  ],
+  "version": "1.12",
+  "metadata": {
+    "client": {
+      "name": "appmap-node",
+      "version": "2.23.0",
+      "url": "https://github.com/getappmap/appmap-node"
+    },
+    "language": {
+      "name": "javascript",
+      "engine": "Node.js",
+      "version": "v18.19.0"
+    },
+    "app": "mern-ecommerce",
+    "recorder": {
+      "type": "requests",
+      "name": "requests"
+    },
+    "name": "OPTIONS /api/user/me (204) — 2024-07-16T16:40:38.271Z"
+  },
+  "classMap": [
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "OPTIONS /api/user/me"
+        }
+      ]
+    }
+  ]
+}
